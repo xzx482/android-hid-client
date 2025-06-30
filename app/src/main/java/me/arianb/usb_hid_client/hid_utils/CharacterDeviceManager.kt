@@ -124,8 +124,8 @@ class CharacterDeviceManager private constructor(private val application: Applic
 
     companion object {
         // character device paths
-        const val KEYBOARD_DEVICE_PATH = "/dev/hidg0"
-        const val MOUSE_DEVICE_PATH = "/dev/hidg1"
+        const val KEYBOARD_DEVICE_PATH = "/dev/hidg1"
+        const val MOUSE_DEVICE_PATH = "/dev/hidg2"
         val ALL_CHARACTER_DEVICE_PATHS = listOf(KEYBOARD_DEVICE_PATH, MOUSE_DEVICE_PATH)
 
         // SeLinux stuff
