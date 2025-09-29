@@ -161,8 +161,8 @@ class CharacterDeviceManager private constructor(private val application: Applic
 
     companion object {
         object DevicePaths {
-            val DEFAULT_KEYBOARD_DEVICE_PATH = KeyboardDevicePath("/dev/hidg0")
-            val DEFAULT_TOUCHPAD_DEVICE_PATH = TouchpadDevicePath("/dev/hidg1")
+            val DEFAULT_KEYBOARD_DEVICE_PATH = KeyboardDevicePath("/dev/hidg1")
+            val DEFAULT_TOUCHPAD_DEVICE_PATH = TouchpadDevicePath("/dev/hidg2")
 
             private val _keyboard = MutableStateFlow(DEFAULT_KEYBOARD_DEVICE_PATH)
             private val _touchpad = MutableStateFlow(DEFAULT_TOUCHPAD_DEVICE_PATH)
